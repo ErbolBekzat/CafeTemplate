@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>Cafe</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="aboutus-style.css">
+        
+        <!--box icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Flex:opsz,wdth,wght@8..144,87.5,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--header-->
+        
+        <header>
+            <!-- <a href="#" class="logo"><i class='bx bxs-home'></i>Кафе</a> -->
+
+            <ul class="navlist">
+                <li><a href="#home" class="home-link enabled">Домой</a></li>
+                <li><a href="#menu" class="menu-link disabled">Меню</a></li>
+                <li><a href="#aboutus" class="aboutus-link disabled">О Нас</a></li>
+            </ul>
+
+           
+            <!-- <div class="nav-icons">
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div> -->
+        </header>
+        
+        <!--home-->
+        <section class="home" id="home">
+            <div class="bg-cover">
+                <div class="home-text text-center">
+                    <h2>Добро пожаловать <br> <span>в наше уютное кафе!</span></h2>
+                    <br>
+                    <button id="home-text-menu-btn" class="menu-btn">Меню</button>
+                </div>
+                <div class="home-address text-center">
+                    <h2>Мы находимся по адресу</h2>
+                    <h2 id="cafe-address">ул. Т. Ражапова, 6</h2>
+                    <div id="autoDismissAlert" style="display:none;" class="auto-dismiss-alert">
+                        Скопировано!
+                    </div>
+                    <br>
+                    <i id="copyIcon" class='bx bx-copy'></i>
+                </div>
+            </div>
+        </section>
+
+        <!--menu-->
+
+        <section class="menu hide" id="menu">
+            <div class="dropdown-div">
+                <div class="menu-dropdown">
+                    <button class="dropdown-toggle">Завтраки</button>
+                    <div class="dropdown-options">
+                        <div class="option" data-value="breakfast">Завтраки</div>
+                        <div class="option" data-value="salad">Салаты</div>
+                        <div class="option" data-value="main-course">Основные блюда</div>
+                        <div class="option" data-value="dessert">Десерты</div>
+                        <div class="option last" data-value="drink">Напитки</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bg-cover">
+                <div id="menu-tab" class="menu-tab breakfast"></div>
+                <div id="menu-tab-hide" class="menu-tab salad"></div>
+                <div id="menu-tab-hide" class="menu-tab main-course"></div>
+                <div id="menu-tab-hide" class="menu-tab dessert"></div>
+                <div id="menu-tab-hide" class="menu-tab drink"></div>
+            </div>
+        </section>
+
+
+        <section class="aboutus hide" id="aboutus">
+            <div class="bg-cover">
+                <div class="working-hours">
+                    <h2>Рабочее Время</h2>
+                    <hr>
+                    <p>
+                        Понедельник - Пятница <br> 9:00 - 18:00
+                    </p>
+                    <p>
+                        Суббота - Воскресенье <br> 10:00 - 16:00
+                    </p>
+                </div>
+                <div class="social-network-links">
+                    <h2>Присоединяйтесь <br> к нам</h2>
+                    <hr>
+                    <p>
+                        <i class='bx bxl-instagram'></i>
+                        <a class="social-link" href="https://www.instagram.com" target="_blank">Instagram</a>
+
+                    </p>
+
+                    <p>
+                        <i class='bx bxl-telegram' style='color:#ffffff' ></i>
+                        <a class="social-link" href="https://web.telegram.org/" target="_blank">Telegram</a>
+                    </p>
+                      
+                </div>
+            </div>
+        </section>
+        
+
+        <!--link to js-->
+        <script src="script.js"></script>
+        <!-- <script src="menuitem.js"></script> -->
+    </body>
+</html>
